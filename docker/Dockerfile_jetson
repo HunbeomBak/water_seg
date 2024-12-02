@@ -1,0 +1,11 @@
+FROM dustynv/onnxruntime:r36.2.0
+
+#RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+
+#RUN pip install --no-cache opencv-contrib-python-headless onnx onnxruntime-gpu==1.19 matplotlib timm albumentations
+
+# Create working directory
+WORKDIR /home/workspace/
+
+
+

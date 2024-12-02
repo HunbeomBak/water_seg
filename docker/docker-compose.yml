@@ -1,0 +1,66 @@
+version: '3.0'
+
+services:
+  water_seg_cuda121:
+    image: water_seg_cuda121:1.0
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+    volumes:
+    - D:\015_segmentation\Custom_SAM:/home/workspace/Project
+    #- input_share:/home/workspace/Inputs
+    #- output_share:/home/workspace/Outputs
+    #- network_share:/network_share
+    #command: sh -c "cd Localai && python main.py"
+
+  water_seg_cuda118:
+    image: water_seg_cuda118:1.0
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+    volumes:
+    - D:\015_segmentation\Custom_SAM:/home/workspace/Project
+    #- input_share:/home/workspace/Inputs
+    #- output_share:/home/workspace/Outputs
+    #- network_share:/network_share
+    #command: sh -c "cd Localai && python main.py"
+
+  water_seg_cuda126:
+    image: water_seg_cuda126:0.2
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+    volumes:
+    - D:\015_segmentation\Custom_SAM:/home/workspace/Project
+    #- input_share:/home/workspace/Inputs
+    #- output_share:/home/workspace/Outputs
+    #- network_share:/network_share
+    #command: sh -c "cd Localai && python main.py"
+
+  water_seg_jetson:
+    image: water_seg_jetson:0.1
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+    volumes:
+    - D:\015_segmentation\Custom_SAM:/home/workspace/Project
+    #- input_share:/home/workspace/Inputs
+    #- output_share:/home/workspace/Outputs
+    #- network_share:/network_share
+    #command: sh -c "cd Localai && python main.py"

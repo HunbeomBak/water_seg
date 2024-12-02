@@ -1,0 +1,29 @@
+{
+    "info": {
+        "event": {
+            "detected_time": "UTC+0900:2024-01-10 17:44:18",
+            "object": {
+                "x": 0,
+                "y": 0,
+                "label": -1
+            },
+            "type": "WaterSegmentation"
+        },
+        "directory": {
+            "input_path": "./demo/inputs/AY02.jpg",
+            "output_dir": "./demo/outputs/"
+        }
+    },
+    "service_name": "Ainos1",
+    "version": 1001,
+    "vms": {
+        "detail": {
+            "cam_name": "\ud601\uc2e0_\uae40\uac74\uc218_\ucc28\ub7c9test_0",
+            "channel": 0,
+            "management_code": "323",
+            "model_name": "RTSP",
+            "node_id": 20322
+        },
+        "type": "danusys"
+    }
+}
